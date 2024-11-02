@@ -6,13 +6,6 @@ const {
   readCtrl,
   updateOne,
 } = require("../controller/index.js");
-
-const validateBody = (req, res, next) => {
-  const incomingData = req.body;
-};
-
-
-
 route.post("/create", createCtrl);
 
 route.get("/read", readCtrl);

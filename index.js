@@ -3,6 +3,12 @@ const mongoose = require("mongoose"); // Mongoose
 const app = express();
 const route = require("./route/index");
 const bodyParser  = require("body-parser");
+
+
+const validatebody = require("./middilware/middilware.index");
+// const incomingdata = require()
+// const incomingdata = req.body;
+  
 app.use(express.json()); // JSON  parce karne ke liye
 const PORT = process.env.PORT || 9000;
 app.use(bodyParser.json()); // json ko pass karne ke liye middilware ka use kare

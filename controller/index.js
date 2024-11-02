@@ -1,4 +1,4 @@
-const { request, response } = require("express");
+const express = require("express");
 const PipeModule = require("../model/pipe");
 const createCtrl = async (request, response) => {
   //localhost:9000/pipe
@@ -20,7 +20,7 @@ const updateOne = async (req, res) => {
   const id = req.params.id;
   const body = req.body;
 
-  const update = awaite.updateOne({ _id: id }, body);
+  const update = await updateOne({ _id: id }, body);
   res.send(updateOne);
 };
 const deleteOne = async (req, res) => {
